@@ -371,7 +371,10 @@ EOF
 	                sh 'sudo docker stop Proj2_Flask_for_Evaluation'
 	                sh 'sudo docker rm Proj2_Flask_for_Evaluation'
 	                sh 'sudo docker rmi proj2_flask_image'
-	                sh "sudo docker rmi '${env.IMAGE2DOCKER}'"
+			
+			if (env.ERROR_DETECTED != 'TRUE') {
+	                    sh "sudo docker rmi '${env.IMAGE2DOCKER}'"
+			}
 
 	    	        echo 'Container removed - READY for next run !!!'
 
