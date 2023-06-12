@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-# Run before to the tests 
+# Run before to the tests
 # =======================
 @pytest.fixture
 def setup():
