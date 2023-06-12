@@ -41,7 +41,7 @@ def test_signup_1(setup):
     """
 
     try:
-        assert "Welcome Bruce Springsteen" in message
+        assert "Wellllcome Bruce Springsteen" in message
         print("Test result: Success")
 
         # Execute the SQL statement
